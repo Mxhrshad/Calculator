@@ -63,21 +63,25 @@ document.addEventListener("DOMContentLoaded", function(){
             result = result + previousResult;
             previousResult = '';
             current.textContent = result;
+            previous.textContent = previousResult;
         }
         else if(operator == "-"){
             result =  previousResult - result;
             previousResult = '';
             current.textContent = result;
+            previous.textContent = previousResult;
         }
         else if(operator == "/"){
             result = previousResult / result;
             previousResult = '';
             current.textContent = result;
+            previous.textContent = previousResult;
         }
         else if(operator == "*"){
             result = result * previousResult;
             previousResult = '';
             current.textContent = result;
+            previous.textContent = previousResult;
         }
     });
 
