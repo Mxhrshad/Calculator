@@ -62,52 +62,21 @@ document.addEventListener("DOMContentLoaded", function(){
         if(operator == "+"){
             result = result + previousResult;
             previousResult = '';
-            if(result.length <= 7){
-                current.textContent = result;
-            }
-            else{
-                result = result.toString()
-                current.textContent = result.slice(0,5) + "...";
-                result = Number(result);
-            }
+            current.textContent = result;
         }
         else if(operator == "-"){
             result =  previousResult - result;
             previousResult = '';
-            if(result.length <= 7){
-                current.textContent = result;
-            }
-            else{
-                result = result.toString()
-                current.textContent = result.slice(0,5) + "...";
-                result = Number(result);
-            }
             current.textContent = result;
         }
         else if(operator == "/"){
             result = previousResult / result;
             previousResult = '';
-            if(result.length <= 7){
-                current.textContent = result;
-            }
-            else{
-                result = result.toString()
-                current.textContent = result.slice(0,5) + "...";
-                result = Number(result);
-            }
             current.textContent = result;
         }
         else if(operator == "*"){
             result = result * previousResult;
             previousResult = '';
-            if(result.length <= 7){
-                current.textContent = result;
-            }
-            else{
-                result = result.toString()
-                current.textContent = result.slice(0,5) + "...";
-                result = Number(result);
-            }
             current.textContent = result;
         }
     });
@@ -116,9 +85,7 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 function handleNumber(num){
-    if(result.length <= 7){
-        result += num;
-    }
+    result += num;
 };
 
 
