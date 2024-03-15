@@ -22,12 +22,35 @@ body{
     border-radius: 15px;
     padding: 1rem;
     flex-direction: column;
+    box-shadow: 7px 7px rgb(7, 7, 7);
 }
 
 .output{
     width: 100%;
     height: 100px;
     background-color: chocolate;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.previous{
+    width: 100%;
+    height: 25%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.current{
+    width: 100%;
+    height: 75%;
+    font-size: 38px;
+    padding: 4px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .numpad{
@@ -44,22 +67,18 @@ body{
     width: 23%;
     height: 19%;
     background-color: black;
+    color: #fff;
+    font-size: 26px;
     margin: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.icon p{
-    color: #fff;
-    font-size: 26px;
-}
 
 .operator{
     background-color: #d89802;
-}
-
-.operator p{
     color: #000000;
     font-size: 26px;
 }
@@ -68,8 +87,5 @@ body{
     width: 47%;
     height: 19%;
     background-color: #006eff;
-}
-
-.equal p{
     color: #fff;
 }
