@@ -5,30 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="../Calculator/style.css">
+    <script src="../Calculator/javascript.js"></script>
 </head>
 <body>
     <div class="calculator">
-        <div class="output"></div>
+        <div class="output">
+            <div class="previous"></div>
+            <div class="current"></div>
+        </div>
         <div class="numpad">
-            <div class="icon"><p>AC</p></div>
-            <div class="icon"><p>+/-</p></div>
-            <div class="icon"><p>DEL</p></div>
-            <div class="icon operator"><p>&#xd7;</p></div>
-            <div class="icon"><p>1</p></div>
-            <div class="icon"><p>2</p></div>
-            <div class="icon"><p>3</p></div>
-            <div class="icon operator"><p>&#247;</p></div>
-            <div class="icon"><p>4</p></div>
-            <div class="icon"><p>5</p></div>
-            <div class="icon"><p>6</p></div>
-            <div class="icon operator"><p>-</p></div>
-            <div class="icon"><p>7</p></div>
-            <div class="icon"><p>8</p></div>
-            <div class="icon"><p>9</p></div>
-            <div class="icon operator"><p>+</p></div>
-            <div class="icon"><p>.</p></div>
-            <div class="icon"><p>0</p></div>
-            <div class="icon equal"><p>=</p></div>
+            <button class="icon" id="clear">AC</button>
+            <button class="icon" id="negative">+/-</button>
+            <button class="icon" id="del">DEL</button>
+            <button class="icon operator" id="multiply">*</button>
+            <button class="icon number">1</button>
+            <button class="icon number">2</button>
+            <button class="icon number">3</button>
+            <button class="icon operator" id="divide">/</button>
+            <button class="icon number">4</button>
+            <button class="icon number">5</button>
+            <button class="icon number">6</button>
+            <button class="icon operator" id="subtract">-</button>
+            <button class="icon number">7</button>
+            <button class="icon number">8</button>
+            <button class="icon number">9</button>
+            <button class="icon operator" id="add">+</button>
+            <button class="icon" id="point">.</button>
+            <button class="icon number">0</button>
+            <button class="icon equal" id="equal">=</button>
         </div>
     </div>
 
@@ -37,6 +41,5 @@
 
 
     
-    <script src="../Calculator/javascript.js"></script>
 </body>
 </html>
